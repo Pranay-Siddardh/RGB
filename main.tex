@@ -1,28 +1,110 @@
 \documentclass[journal]{IEEEtran}
+
+% ==================================================
+% PAGE AND PACKAGE SETUP
+% ==================================================
+
 \usepackage[a5paper,margin=10mm]{geometry}
 \usepackage{tfrupee}
-\setlength{\headheight}{1cm}
-\setlength{\headsep}{0mm}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{enumitem}
+
 \usepackage{gvv-book}
 \usepackage{gvv}
-\usepackage{amsfonts}
-\usepackage{enumitem}
+
+\setlength{\headheight}{1cm}
+\setlength{\headsep}{0mm}
 \raggedbottom
-\hypersetup{colorlinks=true,urlcolor=black}
+
+% Keep the original red linked Table of Contents and cross-references.
+% URL text remains black.
+\hypersetup{
+    colorlinks=true,
+    urlcolor=black
+}
+
 \makeindex
 
+% ==================================================
+% MAIN NUMBERING
+% IEEEtran has separate "display" numbering macros.
+% Redefining only \thesubsection is NOT enough.
+% ==================================================
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\renewcommand{\theparagraph}{\thesubsubsection.\arabic{paragraph}}
+
+\makeatletter
+\def\thesectiondis{\thesection.}
+\def\thesubsectiondis{\thesubsection}
+\def\thesubsubsectiondis{\thesubsubsection}
+\def\theparagraphdis{\theparagraph}
+\makeatother
+
+% Number through subsubsections; paragraph labels remain unnumbered
+% and are not added to the Table of Contents.
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% Main equations: (1.1.1), (1.1.2), (1.2.1), ...
+\numberwithin{equation}{subsection}
+
+% ==================================================
+% HEADING APPEARANCE
+% Match the supplied reference PDF:
+% section = centered small caps;
+% subsection/subsubsection = bold upright, left aligned.
+% ==================================================
+
+\makeatletter
+
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+  {3.5ex plus 1.5ex minus 1.5ex}%
+  {0.7ex plus .5ex minus 0ex}%
+  {\normalfont\normalsize\bfseries\upshape\color{red}}}
+
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+  {2.5ex plus 1ex minus 1ex}%
+  {0.7ex plus .3ex minus 0ex}%
+  {\normalfont\normalsize\bfseries\upshape}}
+
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+  {1.5ex plus .5ex minus .2ex}%
+  {0.5em}%
+  {\normalfont\normalsize\bfseries\upshape}}
+
+\makeatother
+
+% ==================================================
+% DOCUMENT
+% ==================================================
+
 \begin{document}
+
 \bibliographystyle{IEEEtran}
+
 \onecolumn
 \tableofcontents
 \newpage
 
-\numberwithin{equation}{enumi}
-\numberwithin{figure}{enumi}
-\numberwithin{table}{enumi}
-
 \section{ITP-Lab Question}
+
 \input{chapters/problem.tex}
+
+\subsection{Result and Conclusion}
+\input{chapters/result.tex}
+
+\clearpage
+
+% ==================================================
+% APPENDIX
+% Keep IEEEtran's centered "APPENDIX A" title treatment.
+% The appendix file controls only A.x heading/equation formatting.
+% ==================================================
 
 \appendices
 \section{Image-Processing: Theory}

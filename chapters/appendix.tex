@@ -6,24 +6,23 @@
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
 
-% Display section numbers consistently.
-\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname\quad}
+% IEEEtran uses separate display forms for printed heading labels.
+\def\thesubsectiondis{\thesubsection}
+\def\thesubsubsectiondis{\thesubsubsection}
 
-% Section heading style.
-\renewcommand\section{\@startsection{section}{1}{\z@}%
-  {-3.5ex \@plus -1ex \@minus -.2ex}%
-  {2.3ex \@plus .2ex}%
-  {\normalfont\Large\mdseries\upshape}}
+% Appendix subsection headings: A.1, A.2, ...
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+  {3.5ex plus 1.5ex minus 1.5ex}%
+  {0.7ex plus .5ex minus 0ex}%
+  {\normalfont\normalsize\bfseries\upshape\color{red}}}
 
-% Subsubsection heading style.
+% Appendix subsubsection headings: A.1.1, A.1.2, ...
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
-  {-3.25ex\@plus -1ex \@minus -.2ex}%
-  {1.2ex \@plus .2ex}%
-  {\normalfont\normalsize\mdseries\upshape}}
+  {2.5ex plus 1ex minus 1ex}%
+  {0.7ex plus .3ex minus 0ex}%
+  {\normalfont\normalsize\bfseries\upshape}}
 
-% Equation numbering:
-% A.1.1 for equations directly under subsection A.1.
-% A.1.1.1 for equations under subsubsection A.1.1.
+% Appendix equations retain the original hierarchical numbering.
 \numberwithin{equation}{subsubsection}
 \renewcommand{\theequation}{%
   \thesection.\arabic{subsection}.%
@@ -243,7 +242,7 @@ When JPEG is selected, the image-writing stage performs the
 corresponding JPEG encoding and compression.
 
 \subsection{Thresholding Methods and Analysis}
-
+\label{sec:thresholding_methods}
 \subsubsection{Global Mean Thresholding}
 
 The first dynamic method calculates one reference intensity from the

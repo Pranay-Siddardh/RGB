@@ -1,0 +1,164 @@
+
+% Image outputs, comparative analysis, and conclusion.
+% Requires graphicx, amsmath, and array.
+
+% --------------------------------------------------
+% Image formatting
+% --------------------------------------------------
+
+\newcounter{implementationimagecount}
+
+\newcommand{\startimplementationimages}{%
+    \setcounter{implementationimagecount}{0}}
+
+\newcommand{\implementationimage}[2]{%
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \IfFileExists{#1}
+            {\includegraphics[
+                width=\linewidth,
+                height=5.2cm,
+                keepaspectratio
+            ]{#1}}
+            {\fbox{\parbox[c][4.5cm][c]{0.9\linewidth}{\centering
+                \scriptsize Missing image file\\
+                \texttt{\detokenize{#1}}}}}
+        \par
+        \stepcounter{implementationimagecount}%
+        \vspace{3pt}
+        {\footnotesize Fig. \thesubsection.\arabic{subsubsection}.\arabic{implementationimagecount}: #2}
+    \end{minipage}%
+}
+
+% --------------------------------------------------
+% Input Images
+% --------------------------------------------------
+
+\subsubsection{Input Images}
+\startimplementationimages
+
+The original images used in this project are shown below. They are retained as the reference for comparing the grayscale conversion and the two thresholding methods.
+
+\begin{center}
+\implementationimage{figs/arjun/input.jpg}{Arjun}\hfill
+\implementationimage{figs/arya/input.jpg}{Arya}\par\vspace{0.8em}
+
+\implementationimage{figs/mudit/input.jpg}{Mudit}\hfill
+\implementationimage{figs/visweshwar/input.jpg}{Visweshwar}\par\vspace{0.8em}
+
+\implementationimage{figs/saksham/input.jpg}{Saksham}\hfill
+\implementationimage{figs/pranay/input.jpg}{Pranay}\par\vspace{0.8em}
+
+\implementationimage{figs/nethra/input.jpg}{Nethra}\hfill
+\implementationimage{figs/sara/input.jpg}{Sara}
+\end{center}
+
+% --------------------------------------------------
+% Grayscale Images
+% --------------------------------------------------
+
+\subsubsection{Grayscaled Images}
+\startimplementationimages
+
+The grayscale outputs generated from the corresponding input images are shown below.
+
+\begin{center}
+\implementationimage{figs/arjun/gray.jpg}{Arjun}\hfill
+\implementationimage{figs/arya/gray.jpg}{Arya}\par\vspace{0.8em}
+
+\implementationimage{figs/mudit/gray.jpg}{Mudit}\hfill
+\implementationimage{figs/visweshwar/gray.jpg}{Visweshwar}\par\vspace{0.8em}
+
+\implementationimage{figs/saksham/gray.jpg}{Saksham}\hfill
+\implementationimage{figs/pranay/gray.jpg}{Pranay}\par\vspace{0.8em}
+
+\implementationimage{figs/nethra/gray.jpg}{Nethra}\hfill
+\implementationimage{figs/sara/gray.jpg}{Sara}
+\end{center}
+
+% --------------------------------------------------
+% Fixed Threshold Outputs
+% --------------------------------------------------
+
+\subsubsection{Fixed Threshold Outputs}
+\startimplementationimages
+
+The binary outputs produced using the fixed thresholding method are shown below.
+
+\begin{center}
+\implementationimage{figs/arjun/static.jpg}{Arjun (Fixed Threshold)}\hfill
+\implementationimage{figs/arya/static.jpg}{Arya (Fixed Threshold)}\par\vspace{0.8em}
+
+\implementationimage{figs/mudit/static.jpg}{Mudit (Fixed Threshold)}\hfill
+\implementationimage{figs/visweshwar/static.jpg}{Visweshwar (Fixed Threshold)}\par\vspace{0.8em}
+
+\implementationimage{figs/saksham/static.jpg}{Saksham (Fixed Threshold)}\hfill
+\implementationimage{figs/pranay/static.jpg}{Pranay (Fixed Threshold)}\par\vspace{0.8em}
+
+\implementationimage{figs/nethra/static.jpg}{Nethra (Fixed Threshold)}\hfill
+\implementationimage{figs/sara/static.jpg}{Sara (Fixed Threshold)}
+\end{center}
+
+% --------------------------------------------------
+% Average Threshold Outputs
+% --------------------------------------------------
+
+\subsubsection{Average Threshold Outputs}
+\startimplementationimages
+
+The binary outputs produced using the average thresholding method are shown below.
+
+\begin{center}
+\implementationimage{figs/arjun/dynamic.jpg}{Arjun (Dynamic Threshold)}\hfill
+\implementationimage{figs/arya/dynamic.jpg}{Arya (Dynamic Threshold)}\par\vspace{0.8em}
+
+\implementationimage{figs/mudit/dynamic.jpg}{Mudit (Dynamic Threshold)}\hfill
+\implementationimage{figs/visweshwar/dynamic.jpg}{Visweshwar (Dynamic Threshold)}\par\vspace{0.8em}
+
+\implementationimage{figs/saksham/dynamic.jpg}{Saksham (Dynamic Threshold)}\hfill
+\implementationimage{figs/pranay/dynamic.jpg}{Pranay (Dynamic Threshold)}\par\vspace{0.8em}
+
+\implementationimage{figs/nethra/dynamic.jpg}{Nethra (Dynamic Threshold)}\hfill
+\implementationimage{figs/sara/dynamic.jpg}{Sara (Dynamic Threshold)}
+\end{center}
+
+% --------------------------------------------------
+% Comparative Analysis and Conclusion
+% --------------------------------------------------
+
+\subsubsection{Comparative Analysis and Conclusion}
+\label{sec:comparison}
+
+The fixed-threshold and average-threshold outputs are compared separately for each input image. Fixed thresholding uses the constant reference $T=128$, whereas average thresholding calculates a global threshold from the mean grayscale intensity of the current image.
+
+The comparison focuses on the visibility of relevant features, separation of foreground and background, preservation of useful details, and overall interpretability. Because these properties must be judged from the actual output images, a winner is assigned independently for each case rather than assuming that either method is always superior.
+
+\paragraph{Summary of Results:-}
+
+The winning method for each input image is recorded in the table below. The classification is based on the comparison of the corresponding fixed (static) and mean-based (dynamic) thresholding outputs.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\setlength{\tabcolsep}{5pt}
+
+\begin{tabular}{|>{\centering\arraybackslash}p{0.27\textwidth}|
+                >{\centering\arraybackslash}p{0.27\textwidth}|
+                >{\centering\arraybackslash}p{0.27\textwidth}|}
+\hline
+\textbf{Static Wins} &
+\textbf{Dynamic Wins} &
+\textbf{Tie} \\
+\hline
+Mudit\par Sara &
+Visweshwar\par Saksham &
+Arjun\par Arya\par Nethra\par Pranay \\
+\hline
+\end{tabular}
+\end{center}
+
+\paragraph{Conclusion:-}
+
+The comparison is expected to show that thresholding performance depends on the image being processed. A fixed threshold provides a consistent reference and can work well when the subject and background are separated near that intensity. Mean-based thresholding adapts its reference to the overall grayscale intensity distribution, but because it uses one global mean, it may still perform poorly when illumination or contrast varies within an image.
+
+Neither method is guaranteed to produce the best result for every input. Therefore, the preferred thresholding method must be selected on a case-by-case basis according to the image's characteristics and the purpose of the output. The winner for one image need not be the winner for another; the final selection should be justified by the observed detail preservation and foreground-background separation, rather than by a universal ranking of the methods.
+
