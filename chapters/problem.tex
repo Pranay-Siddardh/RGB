@@ -4,7 +4,10 @@
 \subsection{Problem Statement}
 \label{sec:problem_statement}
 
-Image processing is the computational manipulation and analysis of digital images. A digital image is represented by pixels containing RGB (Red, Green, Blue) values, arranged in a two-dimensional array for a 2D image.
+Take a selfie using your phone camera and save the captured image. Convert the image to RGB format, then transform it into grayscale. Finally, convert the grayscale image into a black-and-white image.
+
+\subsection{Implementation}
+\label{sec:implementation}
 
 The luminance intensity $Y$ of each pixel is calculated from its RGB components using the relation given in Appendix~\eqref{eq:app_y_luminance}:
 
@@ -23,13 +26,7 @@ B(x,y) &=
 \end{cases}
 \label{eq:problem_bw_threshold}
 \end{align}
-
-Store the resulting binary image in a separate array without modifying the original grayscale image.
-
-\subsection{Implementation}
-\label{sec:implementation}
-
-The implementation is carried out in stages. First, each input image is converted from RGB to grayscale by calculating one luminance value for every pixel. The grayscale image is then converted into binary form using two thresholding methods: fixed thresholding and average thresholding.
+The implementation is carried out in stages. First, each input image is converted from RGB to grayscale by calculating one luminance value for every pixel. The grayscale image is then converted into binary form using two thresholding methods: a) fixed thresholding \eqref{th:global_static} and b) average thresholding \eqref{th:global_mean}.\\More details and information about thresholding are given in the Appendix, Refer Secion \eqref{sec:thresholding_methods}
 
 \subsubsection{Grayscale Conversion}
 

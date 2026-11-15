@@ -244,7 +244,7 @@ corresponding JPEG encoding and compression.
 \subsection{Thresholding Methods and Analysis}
 \label{sec:thresholding_methods}
 \subsubsection{Global Mean Thresholding}
-
+\label{th:global_mean}
 The first dynamic method calculates one reference intensity from the
 complete grayscale image. If the grayscale matrix is denoted by $Y$,
 the reference is the mean intensity of all pixels:
@@ -267,7 +267,7 @@ input image, but the reference itself is global. It therefore does not
 change from one location to another within the same image.
 
 \subsubsection{Static Reference Thresholding}
-
+\label{th:global_static}
 For comparison, a fixed reference of $128$ is used in the static
 thresholding method. A grayscale pixel is assigned to white when its
 intensity is at least $128$ and to black otherwise:

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.11.9)  15 NOV 2026 04:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.11.9)  15 NOV 2026 10:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1338,53 +1338,53 @@ dist/fonts/enc/dvips/base/8r.enc}
 
 ] (./chapters/problem.tex [2]) (./chapters/result.tex
 \c@implementationimagecount=\count413
-<figs/arjun/input.jpg, id=214, 1355.0625pt x 1206.5075pt>
+<figs/arjun/input.jpg, id=217, 1355.0625pt x 1206.5075pt>
 File: figs/arjun/input.jpg Graphic file (type jpg)
 <use figs/arjun/input.jpg>
 Package pdftex.def Info: figs/arjun/input.jpg  used on input line 43.
 (pdftex.def)             Requested size: 166.15685pt x 147.94113pt.
-<figs/arya/input.jpg, id=215, 903.375pt x 1162.3425pt>
+<figs/arya/input.jpg, id=218, 903.375pt x 1162.3425pt>
 File: figs/arya/input.jpg Graphic file (type jpg)
 <use figs/arya/input.jpg>
 Package pdftex.def Info: figs/arya/input.jpg  used on input line 44.
 (pdftex.def)             Requested size: 114.98924pt x 147.95284pt.
-<figs/mudit/input.jpg, id=216, 889.3225pt x 1055.945pt>
+<figs/mudit/input.jpg, id=219, 889.3225pt x 1055.945pt>
 File: figs/mudit/input.jpg Graphic file (type jpg)
 <use figs/mudit/input.jpg>
 Package pdftex.def Info: figs/mudit/input.jpg  used on input line 46.
 (pdftex.def)             Requested size: 124.59929pt x 147.94408pt.
-<figs/visweshwar/input.jpg, id=217, 925.4575pt x 899.36pt>
+<figs/visweshwar/input.jpg, id=220, 925.4575pt x 899.36pt>
 File: figs/visweshwar/input.jpg Graphic file (type jpg)
 <use figs/visweshwar/input.jpg>
 Package pdftex.def Info: figs/visweshwar/input.jpg  used on input line 47.
 (pdftex.def)             Requested size: 152.24202pt x 147.94885pt.
 [3 <./figs/arjun/input.jpg> <./figs/arya/input.jpg>]
-<figs/saksham/input.jpg, id=229, 1258.7025pt x 1258.7025pt>
+<figs/saksham/input.jpg, id=232, 1258.7025pt x 1258.7025pt>
 File: figs/saksham/input.jpg Graphic file (type jpg)
 <use figs/saksham/input.jpg>
 Package pdftex.def Info: figs/saksham/input.jpg  used on input line 49.
 (pdftex.def)             Requested size: 147.94557pt x 147.94557pt.
-<figs/pranay/input.jpg, id=230, 2794.44pt x 3222.0375pt>
+<figs/pranay/input.jpg, id=233, 2794.44pt x 3222.0375pt>
 File: figs/pranay/input.jpg Graphic file (type jpg)
 <use figs/pranay/input.jpg>
 Package pdftex.def Info: figs/pranay/input.jpg  used on input line 50.
 (pdftex.def)             Requested size: 128.30275pt x 147.93529pt.
-<figs/nethra/input.jpg, id=231, 959.585pt x 963.6pt>
+<figs/nethra/input.jpg, id=234, 959.585pt x 963.6pt>
 File: figs/nethra/input.jpg Graphic file (type jpg)
 <use figs/nethra/input.jpg>
 Package pdftex.def Info: figs/nethra/input.jpg  used on input line 52.
 (pdftex.def)             Requested size: 147.32849pt x 147.94493pt.
-<figs/sara/input.jpg, id=232, 1361.085pt x 1507.6325pt>
+<figs/sara/input.jpg, id=235, 1361.085pt x 1507.6325pt>
 File: figs/sara/input.jpg Graphic file (type jpg)
 <use figs/sara/input.jpg>
 Package pdftex.def Info: figs/sara/input.jpg  used on input line 53.
 (pdftex.def)             Requested size: 133.56195pt x 147.94252pt.
-<figs/arjun/gray.jpg, id=233, 1355.0625pt x 1206.5075pt>
+<figs/arjun/gray.jpg, id=236, 1355.0625pt x 1206.5075pt>
 File: figs/arjun/gray.jpg Graphic file (type jpg)
 <use figs/arjun/gray.jpg>
 Package pdftex.def Info: figs/arjun/gray.jpg  used on input line 66.
 (pdftex.def)             Requested size: 166.15685pt x 147.94113pt.
-<figs/arya/gray.jpg, id=234, 903.375pt x 1162.3425pt>
+<figs/arya/gray.jpg, id=237, 903.375pt x 1162.3425pt>
 File: figs/arya/gray.jpg Graphic file (type jpg)
 <use figs/arya/gray.jpg>
 Package pdftex.def Info: figs/arya/gray.jpg  used on input line 67.
@@ -1392,64 +1392,64 @@ Package pdftex.def Info: figs/arya/gray.jpg  used on input line 67.
 [4 <./figs/mudit/input.jpg> <./figs/visweshwar/input.jpg> <./figs/saksham/input
 .jpg> <./figs/pranay/input.jpg> <./figs/nethra/input.jpg> <./figs/sara/input.jp
 g>]
-<figs/mudit/gray.jpg, id=239, 889.3225pt x 1055.945pt>
+<figs/mudit/gray.jpg, id=242, 889.3225pt x 1055.945pt>
 File: figs/mudit/gray.jpg Graphic file (type jpg)
 <use figs/mudit/gray.jpg>
 Package pdftex.def Info: figs/mudit/gray.jpg  used on input line 69.
 (pdftex.def)             Requested size: 124.59929pt x 147.94408pt.
-<figs/visweshwar/gray.jpg, id=240, 925.4575pt x 899.36pt>
+<figs/visweshwar/gray.jpg, id=243, 925.4575pt x 899.36pt>
 File: figs/visweshwar/gray.jpg Graphic file (type jpg)
 <use figs/visweshwar/gray.jpg>
 Package pdftex.def Info: figs/visweshwar/gray.jpg  used on input line 70.
 (pdftex.def)             Requested size: 152.24202pt x 147.94885pt.
-<figs/saksham/gray.jpg, id=241, 1258.7025pt x 1258.7025pt>
+<figs/saksham/gray.jpg, id=244, 1258.7025pt x 1258.7025pt>
 File: figs/saksham/gray.jpg Graphic file (type jpg)
 <use figs/saksham/gray.jpg>
 Package pdftex.def Info: figs/saksham/gray.jpg  used on input line 72.
 (pdftex.def)             Requested size: 147.94557pt x 147.94557pt.
-<figs/pranay/gray.jpg, id=242, 2794.44pt x 3222.0375pt>
+<figs/pranay/gray.jpg, id=245, 2794.44pt x 3222.0375pt>
 File: figs/pranay/gray.jpg Graphic file (type jpg)
 <use figs/pranay/gray.jpg>
 Package pdftex.def Info: figs/pranay/gray.jpg  used on input line 73.
 (pdftex.def)             Requested size: 128.30275pt x 147.93529pt.
-<figs/nethra/gray.jpg, id=243, 959.585pt x 963.6pt>
+<figs/nethra/gray.jpg, id=246, 959.585pt x 963.6pt>
 File: figs/nethra/gray.jpg Graphic file (type jpg)
 <use figs/nethra/gray.jpg>
 Package pdftex.def Info: figs/nethra/gray.jpg  used on input line 75.
 (pdftex.def)             Requested size: 147.32849pt x 147.94493pt.
-<figs/sara/gray.jpg, id=244, 1361.085pt x 1507.6325pt>
+<figs/sara/gray.jpg, id=247, 1361.085pt x 1507.6325pt>
 File: figs/sara/gray.jpg Graphic file (type jpg)
 <use figs/sara/gray.jpg>
 Package pdftex.def Info: figs/sara/gray.jpg  used on input line 76.
 (pdftex.def)             Requested size: 133.56195pt x 147.94252pt.
 [5 <./figs/arjun/gray.jpg> <./figs/arya/gray.jpg> <./figs/mudit/gray.jpg> <./fi
 gs/visweshwar/gray.jpg> <./figs/saksham/gray.jpg> <./figs/pranay/gray.jpg>]
-<figs/arjun/static.jpg, id=249, 1355.0625pt x 1206.5075pt>
+<figs/arjun/static.jpg, id=252, 1355.0625pt x 1206.5075pt>
 File: figs/arjun/static.jpg Graphic file (type jpg)
 <use figs/arjun/static.jpg>
 Package pdftex.def Info: figs/arjun/static.jpg  used on input line 89.
 (pdftex.def)             Requested size: 166.15685pt x 147.94113pt.
-<figs/arya/static.jpg, id=250, 903.375pt x 1162.3425pt>
+<figs/arya/static.jpg, id=253, 903.375pt x 1162.3425pt>
 File: figs/arya/static.jpg Graphic file (type jpg)
 <use figs/arya/static.jpg>
 Package pdftex.def Info: figs/arya/static.jpg  used on input line 90.
 (pdftex.def)             Requested size: 114.98924pt x 147.95284pt.
-<figs/mudit/static.jpg, id=251, 889.3225pt x 1055.945pt>
+<figs/mudit/static.jpg, id=254, 889.3225pt x 1055.945pt>
 File: figs/mudit/static.jpg Graphic file (type jpg)
 <use figs/mudit/static.jpg>
 Package pdftex.def Info: figs/mudit/static.jpg  used on input line 92.
 (pdftex.def)             Requested size: 124.59929pt x 147.94408pt.
-<figs/visweshwar/static.jpg, id=252, 925.4575pt x 899.36pt>
+<figs/visweshwar/static.jpg, id=255, 925.4575pt x 899.36pt>
 File: figs/visweshwar/static.jpg Graphic file (type jpg)
 <use figs/visweshwar/static.jpg>
 Package pdftex.def Info: figs/visweshwar/static.jpg  used on input line 93.
 (pdftex.def)             Requested size: 152.24202pt x 147.94885pt.
-<figs/saksham/static.jpg, id=253, 1258.7025pt x 1258.7025pt>
+<figs/saksham/static.jpg, id=256, 1258.7025pt x 1258.7025pt>
 File: figs/saksham/static.jpg Graphic file (type jpg)
 <use figs/saksham/static.jpg>
 Package pdftex.def Info: figs/saksham/static.jpg  used on input line 95.
 (pdftex.def)             Requested size: 147.94557pt x 147.94557pt.
-<figs/pranay/static.jpg, id=254, 2794.44pt x 3222.0375pt>
+<figs/pranay/static.jpg, id=257, 2794.44pt x 3222.0375pt>
 File: figs/pranay/static.jpg Graphic file (type jpg)
 <use figs/pranay/static.jpg>
 Package pdftex.def Info: figs/pranay/static.jpg  used on input line 96.
@@ -1457,32 +1457,32 @@ Package pdftex.def Info: figs/pranay/static.jpg  used on input line 96.
 [6 <./figs/nethra/gray.jpg> <./figs/sara/gray.jpg> <./figs/arjun/static.jpg> <.
 /figs/arya/static.jpg> <./figs/mudit/static.jpg> <./figs/visweshwar/static.jpg>
 ]
-<figs/nethra/static.jpg, id=259, 959.585pt x 963.6pt>
+<figs/nethra/static.jpg, id=262, 959.585pt x 963.6pt>
 File: figs/nethra/static.jpg Graphic file (type jpg)
 <use figs/nethra/static.jpg>
 Package pdftex.def Info: figs/nethra/static.jpg  used on input line 98.
 (pdftex.def)             Requested size: 147.32849pt x 147.94493pt.
-<figs/sara/static.jpg, id=260, 1361.085pt x 1507.6325pt>
+<figs/sara/static.jpg, id=263, 1361.085pt x 1507.6325pt>
 File: figs/sara/static.jpg Graphic file (type jpg)
 <use figs/sara/static.jpg>
 Package pdftex.def Info: figs/sara/static.jpg  used on input line 99.
 (pdftex.def)             Requested size: 133.56195pt x 147.94252pt.
-<figs/arjun/dynamic.jpg, id=261, 1355.0625pt x 1206.5075pt>
+<figs/arjun/dynamic.jpg, id=264, 1355.0625pt x 1206.5075pt>
 File: figs/arjun/dynamic.jpg Graphic file (type jpg)
 <use figs/arjun/dynamic.jpg>
 Package pdftex.def Info: figs/arjun/dynamic.jpg  used on input line 112.
 (pdftex.def)             Requested size: 166.15685pt x 147.94113pt.
-<figs/arya/dynamic.jpg, id=262, 903.375pt x 1162.3425pt>
+<figs/arya/dynamic.jpg, id=265, 903.375pt x 1162.3425pt>
 File: figs/arya/dynamic.jpg Graphic file (type jpg)
 <use figs/arya/dynamic.jpg>
 Package pdftex.def Info: figs/arya/dynamic.jpg  used on input line 113.
 (pdftex.def)             Requested size: 114.98924pt x 147.95284pt.
-<figs/mudit/dynamic.jpg, id=263, 889.3225pt x 1055.945pt>
+<figs/mudit/dynamic.jpg, id=266, 889.3225pt x 1055.945pt>
 File: figs/mudit/dynamic.jpg Graphic file (type jpg)
 <use figs/mudit/dynamic.jpg>
 Package pdftex.def Info: figs/mudit/dynamic.jpg  used on input line 115.
 (pdftex.def)             Requested size: 124.59929pt x 147.94408pt.
-<figs/visweshwar/dynamic.jpg, id=264, 925.4575pt x 899.36pt>
+<figs/visweshwar/dynamic.jpg, id=267, 925.4575pt x 899.36pt>
 File: figs/visweshwar/dynamic.jpg Graphic file (type jpg)
 <use figs/visweshwar/dynamic.jpg>
 Package pdftex.def Info: figs/visweshwar/dynamic.jpg  used on input line 116.
@@ -1490,22 +1490,22 @@ Package pdftex.def Info: figs/visweshwar/dynamic.jpg  used on input line 116.
 [7 <./figs/saksham/static.jpg> <./figs/pranay/static.jpg> <./figs/nethra/static
 .jpg> <./figs/sara/static.jpg> <./figs/arjun/dynamic.jpg> <./figs/arya/dynamic.
 jpg>]
-<figs/saksham/dynamic.jpg, id=270, 1258.7025pt x 1258.7025pt>
+<figs/saksham/dynamic.jpg, id=273, 1258.7025pt x 1258.7025pt>
 File: figs/saksham/dynamic.jpg Graphic file (type jpg)
 <use figs/saksham/dynamic.jpg>
 Package pdftex.def Info: figs/saksham/dynamic.jpg  used on input line 118.
 (pdftex.def)             Requested size: 147.94557pt x 147.94557pt.
-<figs/pranay/dynamic.jpg, id=271, 2794.44pt x 3222.0375pt>
+<figs/pranay/dynamic.jpg, id=274, 2794.44pt x 3222.0375pt>
 File: figs/pranay/dynamic.jpg Graphic file (type jpg)
 <use figs/pranay/dynamic.jpg>
 Package pdftex.def Info: figs/pranay/dynamic.jpg  used on input line 119.
 (pdftex.def)             Requested size: 128.30275pt x 147.93529pt.
-<figs/nethra/dynamic.jpg, id=272, 959.585pt x 963.6pt>
+<figs/nethra/dynamic.jpg, id=275, 959.585pt x 963.6pt>
 File: figs/nethra/dynamic.jpg Graphic file (type jpg)
 <use figs/nethra/dynamic.jpg>
 Package pdftex.def Info: figs/nethra/dynamic.jpg  used on input line 121.
 (pdftex.def)             Requested size: 147.32849pt x 147.94493pt.
-<figs/sara/dynamic.jpg, id=273, 1361.085pt x 1507.6325pt>
+<figs/sara/dynamic.jpg, id=276, 1361.085pt x 1507.6325pt>
 File: figs/sara/dynamic.jpg Graphic file (type jpg)
 <use figs/sara/dynamic.jpg>
 Package pdftex.def Info: figs/sara/dynamic.jpg  used on input line 122.
@@ -1531,10 +1531,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7AC092E153AF612BE9039C0891B89D80;6145.
  ) 
 Here is how much of TeX's memory you used:
- 52917 strings out of 467363
- 1285342 string characters out of 5419001
- 1926328 words of memory out of 6000000
- 81164 multiletter control sequences out of 15000+600000
+ 52919 strings out of 467363
+ 1285376 string characters out of 5419001
+ 1926470 words of memory out of 6000000
+ 81166 multiletter control sequences out of 15000+600000
  659865 words of font info for 106 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  99i,14n,118p,1194b,1143s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1548,10 +1548,10 @@ ype1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (15 pages, 6981120 bytes).
+Output written on main.pdf (15 pages, 6981184 bytes).
 PDF statistics:
- 420 PDF objects out of 1000 (max. 8388607)
- 329 compressed objects within 4 object streams
+ 423 PDF objects out of 1000 (max. 8388607)
+ 332 compressed objects within 4 object streams
  88 named destinations out of 1000 (max. 500000)
  525 words of extra memory for PDF output out of 10000 (max. 10000000)
 
