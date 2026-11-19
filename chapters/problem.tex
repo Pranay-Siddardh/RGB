@@ -28,41 +28,88 @@ B(x,y) &=
 \end{align}
 The implementation is carried out in stages. First, each input image is converted from RGB to grayscale by calculating one luminance value for every pixel. The grayscale image is then converted into binary form using two thresholding methods: a) fixed thresholding \eqref{th:global_static} and b) average thresholding \eqref{th:global_mean}.\\More details and information about thresholding are given in the Appendix, Refer Secion \eqref{sec:thresholding_methods}
 
+
 \subsubsection{Grayscale Conversion}
 
-Each input image is converted into a grayscale image by reducing the three RGB components to one luminance value, $Y(x,y)$, using the luminance equation defined above.
+Each input image is converted into a grayscale image by reducing the three RGB components to one luminance value, $Y(x,y)$, using the luminance equation:
 
-The luminance equation assigns different weights to the RGB components. The green component contributes the most, followed by red and blue. The resulting intensity image preserves brightness information while removing colour information.
+\begin{equation}
+Y=0.299R+0.587G+0.114B
+\end{equation}
+
+The corresponding equation is provided in Appendix A, Section A.4, Equation~\hyperref[eq:app_grayscale_y]{\ref*{eq:app_grayscale_y}}.
+
+The luminance equation assigns different weights to the RGB components. The green component contributes the most, followed by red and blue, as represented by:
+
+\begin{equation}
+0.587>0.299>0.114
+\end{equation}
+
+This relationship is given in Appendix A, Section A.3.2, Equation~\hyperref[eq:app_luminance_weights]{\ref*{eq:app_luminance_weights}}. The resulting intensity image preserves brightness information while removing colour information.
 
 \subsubsection{Method 1: Fixed Thresholding}
 
-In fixed thresholding, a constant threshold $T$ is selected before processing the images. For each pixel, the luminance $Y(x,y)$ is compared with $T$. If $Y(x,y)\leq T$, the output pixel is set to $0$ (black); otherwise, it is set to $255$ (white).
+In fixed thresholding, a constant threshold $T$ is selected before processing the images. For each pixel, the luminance $Y(x,y)$ is compared with $T$. The output pixel is classified according to the following condition:
 
-In this implementation, the threshold is fixed at $T=128$. This means that pixels with intensity values at or below 128 are classified as black, while those above 128 are classified as white.
+\begin{equation}
+B(i,j)=
+\begin{cases}
+0, & Y(i,j)\leq T,\\
+255, & Y(i,j)>T.
+\end{cases}
+\end{equation}
+
+The general binary thresholding condition is defined in Appendix A, Section A.4, Equation~\hyperref[eq:app_bw_threshold]{\ref*{eq:app_bw_threshold}}.
+
+In this implementation, the threshold is fixed at $T=128$. Therefore, the classification condition becomes:
+
+\begin{equation}
+B(i,j)=
+\begin{cases}
+255, & Y(i,j)>128,\\
+0, & Y(i,j)\leq128.
+\end{cases}
+\end{equation}
+
+The corresponding static thresholding equation is provided in Appendix A, Section A.6.2, Equation~\hyperref[eq:app_static_threshold]{\ref*{eq:app_static_threshold}}.
 
 A limitation of fixed thresholding is that one threshold may not classify foreground and background effectively across images with different brightness and contrast. Consequently, large regions can become the same colour in the binary output and useful details may be lost. This limitation motivates the image-dependent average-thresholding method described next.
 
-The code to implement this is: \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
+The code to implement this is:
+\begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
 (*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{codes/static.py}@*)
 \end{lstlisting}
 
 \subsubsection{Method 2: Average Thresholding}
 
-In average thresholding, the threshold is calculated from the grayscale intensities of the current image instead of being fixed in advance. For an image with $M\times N$ pixels, the average threshold is
+In average thresholding, the threshold is calculated from the grayscale intensities of the current image instead of being fixed in advance. For an image with $M\times N$ pixels, the average threshold is calculated as:
 
 \begin{equation}
 T_{\mathrm{avg}}=
 \frac{1}{MN}
-\sum_{x=1}^{M}
-\sum_{y=1}^{N}
-Y(x,y).
+\sum_{i=1}^{M}
+\sum_{j=1}^{N}
+Y(i,j).
 \end{equation}
 
-Each pixel is classified by comparing its luminance with $T_{\mathrm{avg}}$: pixels with $Y(x,y)\leq T_{\mathrm{avg}}$ become black, while pixels with $Y(x,y)>T_{\mathrm{avg}}$ become white.
+This global mean calculation is defined in Appendix A, Section A.6.1, Equation~\hyperref[eq:app_global_mean]{\ref*{eq:app_global_mean}}.
+
+Each pixel is classified by comparing its luminance with $T_{\mathrm{avg}}$. The resulting binary output is determined using:
+
+\begin{equation}
+B(i,j)=
+\begin{cases}
+255, & Y(i,j)>T_{\mathrm{avg}},\\
+0, & Y(i,j)\leq T_{\mathrm{avg}}.
+\end{cases}
+\end{equation}
+
+The corresponding global mean thresholding condition is provided in Appendix A, Section A.6.1, Equation~\hyperref[eq:app_global_mean_threshold]{\ref*{eq:app_global_mean_threshold}}.
 
 The advantage is adaptability: the threshold responds to the overall brightness distribution of each input image rather than applying the same threshold to every image. Since this is a single image-wide average, it does not necessarily compensate for uneven lighting at different locations within the same image.
 
-The code to implement this is: \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
+The code to implement this is:
+\begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
 (*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{codes/dynamic.py}@*)
 \end{lstlisting}
 
